@@ -1,4 +1,4 @@
-import trainer1 from "@/assets/trainer-1.jpg";
+import aboutGym from "@/assets/about-gym.jpg";
 
 const About = () => (
   <section id="sobre-nosotros" className="py-20 md:py-28 bg-background">
@@ -6,7 +6,7 @@ const About = () => (
       <div className="grid md:grid-cols-2 gap-16 items-center">
         <div className="overflow-hidden">
           <img
-            src={trainer1}
+            src={aboutGym}
             alt="FitClub entrenador"
             loading="lazy"
             width={640}
