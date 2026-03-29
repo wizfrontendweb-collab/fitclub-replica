@@ -20,11 +20,7 @@ const Hero = () => (
         <p className="text-xl md:text-2xl text-primary-foreground/90 italic font-medium mt-6 mb-4">
           Alcanzá tu mejor versión con entrenamiento personalizado
         </p>
-        <p className="text-primary-foreground/80 text-base md:text-lg leading-relaxed max-w-xl mb-8">
-          Alcanzá tus objetivos deportivos en FitClub Personal Training. Somos el gimnasio más personal de Santa Fe.
-          En nuestros estudios privados en el centro de la ciudad, recibís atención personalizada de un entrenador
-          experimentado con todo el espacio para vos. Ponete más fuerte, más fit y disfrutá del proceso.
-        </p>
+        <div className="mb-8" />
         <a
           href="#planes"
           className="inline-block bg-gold text-primary-foreground px-8 py-4 text-sm font-bold tracking-widest uppercase hover:bg-gold-dark transition-colors"
