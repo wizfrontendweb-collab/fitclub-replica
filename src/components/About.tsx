@@ -6,7 +6,7 @@ const About = () => (
       <div className="grid md:grid-cols-2 gap-16 items-center">
         <div className="overflow-hidden">
           <img
-            src={trainer1}
+            src={aboutGym}
             alt="FitClub entrenador"
             loading="lazy"
             width={640}
