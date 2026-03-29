@@ -13,10 +13,7 @@ const Navbar = () => {
   return (
     <nav className="absolute top-0 left-0 right-0 z-50 md:top-[44px]">
       <div className="container flex items-center justify-between py-5">
-        <a href="#" className="flex items-center gap-2 text-primary-foreground">
-          <Dumbbell className="w-8 h-8 text-gold" />
-          <span className="text-2xl font-bold tracking-wider">FITCLUB</span>
-        </a>
+        <div className="w-8" />
 
         <div className="hidden lg:flex items-center gap-8">
           {navItems.map((item) => (
