@@ -1,4 +1,4 @@
-import trainer1 from "@/assets/trainer-1.jpg";
+import aboutGym from "@/assets/about-gym.jpg";
 
 const About = () => (
   <section id="sobre-nosotros" className="py-20 md:py-28 bg-background">
