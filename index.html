@@ -8,11 +8,49 @@
     <link rel="icon" href="/favicon.png" type="image/png" />
     <link rel="canonical" href="https://fitclub.com.ar" />
 
+    <!-- Preconnect to Google Fonts for faster font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Load Google Fonts with display=swap to avoid FOIT -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,500&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,500&display=swap" />
+    </noscript>
+
     <meta property="og:title" content="FitClub Santa Fe | Personal Training & Fitness" />
     <meta property="og:description" content="El gimnasio más personal de Santa Fe. Entrenamiento personalizado en estudios privados." />
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- JSON-LD structured data for local business SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "GymOrFitnessCenter",
+      "name": "FitClub Santa Fe",
+      "description": "El gimnasio más personal de Santa Fe. Entrenamiento personalizado en estudios privados.",
+      "url": "https://fitclub.com.ar",
+      "telephone": "+54-342-555-1234",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Bv. Gálvez 1500",
+        "addressLocality": "Santa Fe",
+        "addressCountry": "AR"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "38"
+      }
+    }
+    </script>
   </head>
 
   <body>

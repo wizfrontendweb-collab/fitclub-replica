@@ -1,15 +1,18 @@
+import { lazy, Suspense } from "react";
 import TopBar from "@/components/TopBar";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import Services from "@/components/Services";
-import GoogleReview from "@/components/GoogleReview";
-import Testimonials from "@/components/Testimonials";
-import About from "@/components/About";
-import Trainers from "@/components/Trainers";
-import Plans from "@/components/Plans";
-import Experience from "@/components/Experience";
-import Footer from "@/components/Footer";
-import WhatsAppButton from "@/components/WhatsAppButton";
+
+// Lazy load below-the-fold components for code splitting
+const Services = lazy(() => import("@/components/Services"));
+const GoogleReview = lazy(() => import("@/components/GoogleReview"));
+const Testimonials = lazy(() => import("@/components/Testimonials"));
+const About = lazy(() => import("@/components/About"));
+const Plans = lazy(() => import("@/components/Plans"));
+const Trainers = lazy(() => import("@/components/Trainers"));
+const Experience = lazy(() => import("@/components/Experience"));
+const Footer = lazy(() => import("@/components/Footer"));
+const WhatsAppButton = lazy(() => import("@/components/WhatsAppButton"));
 
 const Index = () => (
   <>
@@ -17,16 +20,20 @@ const Index = () => (
     <Navbar />
     <main>
       <Hero />
-      <Services />
-      <GoogleReview />
-      <Testimonials />
-      <About />
-      <Plans />
-      <Trainers />
-      <Experience />
+      <Suspense fallback={null}>
+        <Services />
+        <GoogleReview />
+        <Testimonials />
+        <About />
+        <Plans />
+        <Trainers />
+        <Experience />
+      </Suspense>
     </main>
-    <Footer />
-    <WhatsAppButton />
+    <Suspense fallback={null}>
+      <Footer />
+      <WhatsAppButton />
+    </Suspense>
   </>
 );
 
