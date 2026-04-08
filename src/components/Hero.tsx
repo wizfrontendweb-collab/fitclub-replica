@@ -9,6 +9,7 @@ const Hero = () => (
       width={1920}
       height={1080}
       fetchPriority="high"
+      decoding="async"
     />
     <div className="absolute inset-0 hero-overlay" />
     <div className="container relative z-10">
